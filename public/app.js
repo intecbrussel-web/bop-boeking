@@ -10,7 +10,9 @@ const dagknoppen = document.getElementById("dagknoppen");
 const venster = document.getElementById("venster");
 const formulier = document.getElementById("formulier");
 const melding = document.getElementById("melding");
-
+// Demo-modus: op GitHub Pages is er geen server.
+// Lokaal testen kan met ?demo achter de link.
+const DEMO = location.hostname.endsWith("github.io") || location.search.includes("demo");
 let alleLessen = [];
 let alleLesgevers = [];
 let maandag = null;      // maandag van de week die we tonen (Date)
@@ -54,12 +56,20 @@ function isGsm() { return window.innerWidth <= 900; }
 // ---------- STAP 1: data ophalen ----------
 async function laadData() {
   try {
-    const [lessenAntw, lesgeversAntw] = await Promise.all([
-      fetch("/api/lessen"),
-      fetch("/api/lesgevers"),
-    ]);
-    alleLessen = await lessenAntw.json();
-    alleLesgevers = await lesgeversAntw.json();
+       if (DEMO) {
+      // Demo: alles uit één bestand, alle plaatsen vrij
+      const antwoord = await fetch("demo-data.json");
+      const data = await antwoord.json();
+      alleLessen = data.lessen.map((les) => ({ ...les, vrij: les.capaciteit }));
+      alleLesgevers = data.lesgevers || [];
+    } else {
+      const [lessenAntw, lesgeversAntw] = await Promise.all([
+        fetch("/api/lessen"),
+        fetch("/api/lesgevers"),
+      ]);
+      alleLessen = await lessenAntw.json();
+      alleLesgevers = await lesgeversAntw.json();
+    }
 
     // Eerste keer: kies de week van vandaag, of de eerste week met lessen
     if (!maandag) maandag = kiesStartWeek();
@@ -249,6 +259,14 @@ document.getElementById("annuleer").addEventListener("click", () => venster.clos
 
 formulier.addEventListener("submit", async (e) => {
   e.preventDefault();
+   // Demo: niets versturen, alleen een melding tonen
+  if (DEMO) {
+    melding.className = "gelukt";
+    melding.textContent = "Dit is een demo: uw inschrijving wordt niet opgeslagen.";
+    formulier.querySelector("button[type=submit]").hidden = true;
+    document.getElementById("annuleer").textContent = "Sluiten";
+    return;
+  }
   const antwoord = await fetch("/api/boekingen", {
     method: "POST",
     headers: { "Content-Type": "application/json" },
@@ -270,5 +288,5 @@ formulier.addEventListener("submit", async (e) => {
     melding.textContent = resultaat.fout;
   }
 });
-
+if (DEMO) document.getElementById("demo-melding").hidden = false;
 laadData();

@@ -20,7 +20,14 @@ header {
 }
 header h1 { margin: 0 0 4px; font-size: 1.8rem; }
 header p  { margin: 0; font-size: 1.1rem; }
-
+.demo-melding {
+  margin: 0;
+  padding: 10px 20px;
+  background: #fef3c7;
+  color: #78350f;
+  text-align: center;
+  font-weight: bold;
+}
 main { max-width: 1600px; margin: 0 auto; padding: 16px; }
 
 /* ---------- Navigatie ---------- */
