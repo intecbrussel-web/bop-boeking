@@ -1,0 +1,12 @@
+{
+  "name": "bop-boeking",
+  "version": "1.0.0",
+  "description": "Simpele boekingspagina voor lessen van het Brussels Ouderenplatform",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.19.2"
+  }
+}

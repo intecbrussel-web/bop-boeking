@@ -1,0 +1,43 @@
+{
+  "lessen": [
+    { "id": "l1",  "naam": "Hablemos Avanzado",            "zaal": "Gouden zaal",   "lesgever": "", "datum": "2026-10-19", "dagdeel": "VM", "start": "09:30", "einde": "11:30", "boekbaar": true,  "capaciteit": 12 },
+    { "id": "l2",  "naam": "Topics & Practice",            "zaal": "Zilveren zaal", "lesgever": "", "datum": "2026-10-19", "dagdeel": "VM", "start": "",      "einde": "",      "boekbaar": true,  "capaciteit": 12 },
+    { "id": "l17", "naam": "Teamvergadering",              "zaal": "Expo-zaal",     "lesgever": "", "datum": "2026-10-19", "dagdeel": "VM", "start": "",      "einde": "",      "boekbaar": false, "opmerking": "Intern" },
+    { "id": "l3",  "naam": "Grootouders voor het Klimaat", "zaal": "Expo-zaal",     "lesgever": "", "datum": "2026-10-19", "dagdeel": "NM", "start": "14:00", "einde": "",      "boekbaar": true,  "capaciteit": 30 },
+
+    { "id": "l4",  "naam": "Hablemos Intermedio",          "zaal": "Gouden zaal",   "lesgever": "", "datum": "2026-10-20", "dagdeel": "VM", "start": "10:00", "einde": "12:00", "boekbaar": true,  "capaciteit": 12 },
+    { "id": "l5",  "naam": "Italiaans",                    "zaal": "Zilveren zaal", "lesgever": "", "datum": "2026-10-20", "dagdeel": "NM", "start": "14:00", "einde": "16:00", "boekbaar": true,  "capaciteit": 12 },
+    { "id": "l6",  "naam": "Workshop Gmail-app",           "zaal": "Expo-zaal",     "lesgever": "Xander", "datum": "2026-10-20", "dagdeel": "NM", "start": "", "einde": "",     "boekbaar": true,  "capaciteit": 15 },
+
+    { "id": "l7",  "naam": "Senioretics",                  "zaal": "Expo-zaal",     "lesgever": "", "datum": "2026-10-21", "dagdeel": "VM", "start": "09:45", "einde": "10:45", "boekbaar": true,  "capaciteit": 20 },
+    { "id": "l8",  "naam": "Senioretics starters",         "zaal": "Expo-zaal",     "lesgever": "", "datum": "2026-10-21", "dagdeel": "VM", "start": "10:45", "einde": "12:00", "boekbaar": true,  "capaciteit": 20 },
+    { "id": "l9",  "naam": "Jazz",                         "zaal": "Expo-zaal",     "lesgever": "", "datum": "2026-10-21", "dagdeel": "NM", "start": "",      "einde": "",      "boekbaar": true,  "capaciteit": 25 },
+
+    { "id": "l18", "naam": "Samen lezen",                  "zaal": "Vitrine",       "lesgever": "", "datum": "2026-10-22", "dagdeel": "VM", "start": "",      "einde": "",      "boekbaar": true,  "capaciteit": 10 },
+    { "id": "l10", "naam": "Practical English",            "zaal": "Gouden zaal",   "lesgever": "", "datum": "2026-10-22", "dagdeel": "VM", "start": "",      "einde": "",      "boekbaar": true,  "capaciteit": 12 },
+    { "id": "l19", "naam": "Cultuurvuur CxT",              "zaal": "Zilveren zaal", "lesgever": "", "datum": "2026-10-22", "dagdeel": "VM", "start": "",      "einde": "",      "boekbaar": true,  "capaciteit": 20 },
+    { "id": "l11", "naam": "Tone Up",                      "zaal": "Expo-zaal",     "lesgever": "", "datum": "2026-10-22", "dagdeel": "VM", "start": "09:15", "einde": "10:15", "boekbaar": true,  "capaciteit": 20 },
+    { "id": "l12", "naam": "Qi gong",                      "zaal": "Expo-zaal",     "lesgever": "", "datum": "2026-10-22", "dagdeel": "VM", "start": "10:30", "einde": "11:30", "boekbaar": true,  "capaciteit": 20 },
+    { "id": "l20", "naam": "Expo + Workshop",              "zaal": "Vitrine",       "lesgever": "", "datum": "2026-10-22", "dagdeel": "NM", "start": "",      "einde": "",      "boekbaar": true,  "capaciteit": 20 },
+    { "id": "l13", "naam": "Fotoclub",                     "zaal": "Gouden zaal",   "lesgever": "", "datum": "2026-10-22", "dagdeel": "NM", "start": "",      "einde": "",      "boekbaar": true,  "capaciteit": 15 },
+    { "id": "l21", "naam": "Cultuurvuur Nourouz",          "zaal": "Zilveren zaal", "lesgever": "", "datum": "2026-10-22", "dagdeel": "NM", "start": "",      "einde": "",      "boekbaar": true,  "capaciteit": 30 },
+    { "id": "l14", "naam": "Dance Mix",                    "zaal": "Expo-zaal",     "lesgever": "", "datum": "2026-10-22", "dagdeel": "NM", "start": "14:00", "einde": "15:00", "boekbaar": true,  "capaciteit": 20 },
+    { "id": "l15", "naam": "Yogaletix",                    "zaal": "Expo-zaal",     "lesgever": "", "datum": "2026-10-22", "dagdeel": "NM", "start": "15:00", "einde": "16:00", "boekbaar": true,  "capaciteit": 20 },
+
+    { "id": "l22", "naam": "Welzijnszorg",                 "zaal": "Zilveren zaal", "lesgever": "", "datum": "2026-10-23", "dagdeel": "dag", "start": "10:30", "einde": "17:00", "boekbaar": false, "opmerking": "Geen inschrijving" },
+    { "id": "l23", "naam": "Repetitie Bocantus",           "zaal": "Expo-zaal",     "lesgever": "", "datum": "2026-10-23", "dagdeel": "VM", "start": "",      "einde": "",      "boekbaar": false, "opmerking": "Geen inschrijving" },
+    { "id": "l24", "naam": "Welzijnszorg",                 "zaal": "Expo-zaal",     "lesgever": "", "datum": "2026-10-23", "dagdeel": "NM", "start": "12:00", "einde": "17:00", "boekbaar": false, "opmerking": "Geen inschrijving" },
+    { "id": "l25", "naam": "Welzijnszorg – receptie",      "zaal": "Inkomhal + bar","lesgever": "", "datum": "2026-10-23", "dagdeel": "NM", "start": "",      "einde": "",      "boekbaar": false, "opmerking": "Geen inschrijving" },
+    { "id": "l16", "naam": "Conversatietafel Nederlands",  "zaal": "Gouden zaal",   "lesgever": "", "datum": "2026-10-23", "dagdeel": "NM", "start": "14:00", "einde": "",      "boekbaar": true,  "capaciteit": 10 }
+  ],
+
+  "lesgevers": [
+    { "naam": "Xander", "datum": "2026-10-20", "dagdeel": "VM", "plaats": "Vitrine" },
+    { "naam": "Xander", "datum": "2026-10-20", "dagdeel": "NM", "plaats": "Vitrine" },
+    { "naam": "Xander", "datum": "2026-10-21", "dagdeel": "VM", "plaats": "Vitrine" },
+    { "naam": "Xander", "datum": "2026-10-21", "dagdeel": "NM", "plaats": "Vitrine" },
+    { "naam": "Xander", "datum": "2026-10-21", "dagdeel": "NM", "plaats": "Brons (13u–14u)" }
+  ],
+
+  "boekingen": []
+}

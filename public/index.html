@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weekplanning – Brussels Ouderenplatform</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Weekplanning &amp; inschrijven</h1>
+    <p>Kies een les en klik op <strong>Inschrijven</strong>.</p>
+  </header>
+
+  <main>
+    <!-- Navigatie: vorige / volgende week -->
+    <nav class="navigatie" aria-label="Week kiezen">
+      <button id="vorige" class="nav-knop">◀ Vorige week</button>
+      <span id="periode" aria-live="polite"></span>
+      <button id="volgende" class="nav-knop">Volgende week ▶</button>
+    </nav>
+
+    <!-- Op de gsm: één dag tegelijk kiezen -->
+    <div id="dagknoppen" class="dagknoppen" aria-label="Dag kiezen"></div>
+
+    <!-- Legende -->
+    <div class="legende">
+      <span><i class="bol groen"></i> Plaats vrij</span>
+      <span><i class="bol oranje"></i> Bijna vol</span>
+      <span><i class="bol rood"></i> Volzet</span>
+      <span><i class="bol grijs"></i> Geen inschrijving</span>
+    </div>
+
+    <!-- Hier bouwt app.js het rooster -->
+    <div id="rooster" class="rooster">Planning wordt geladen…</div>
+  </main>
+
+  <!-- Venster om in te schrijven -->
+  <dialog id="venster">
+    <form id="formulier">
+      <h2 id="venster-titel">Inschrijven</h2>
+      <p id="venster-info"></p>
+
+      <label for="naam">Uw naam</label>
+      <input id="naam" name="naam" autocomplete="name" required>
+
+      <label for="telefoon">Uw telefoonnummer</label>
+      <input id="telefoon" name="telefoon" type="tel" autocomplete="tel" required>
+
+      <p id="melding" role="alert"></p>
+
+      <div class="knoppen">
+        <button type="button" id="annuleer" class="secundair">Annuleren</button>
+        <button type="submit">Bevestigen</button>
+      </div>
+    </form>
+  </dialog>
+
+  <script src="app.js"></script>
+</body>
+</html>
